@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" width="920" height="450">
+<defs>
+  <style>text { font-family: Georgia, "Times New Roman", serif; }</style>
+  <marker id="fw" markerWidth="7" markerHeight="5.5" refX="7" refY="2.75" orient="auto"><polygon points="0 0,7 2.75,0 5.5" fill="#1c1c1e"/></marker>
+  <marker id="fb" markerWidth="7" markerHeight="5.5" refX="7" refY="2.75" orient="auto"><polygon points="0 0,7 2.75,0 5.5" fill="#b22020"/></marker>
+  <marker id="gr" markerWidth="7" markerHeight="5.5" refX="7" refY="2.75" orient="auto"><polygon points="0 0,7 2.75,0 5.5" fill="#bbb"/></marker>
+  <filter id="sh" x="-5%" y="-5%" width="110%" height="110%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#00000018"/></filter>
+</defs>
+<rect width="920" height="450" fill="#fafaf8"/>
+<rect x="0" y="0" width="920" height="48" fill="#1c1c1e"/>
+<text x="460" y="18" text-anchor="middle" font-size="12.5" font-weight="bold" fill="white" letter-spacing="1.1">COMPLEMENTARY FILTER &#x2014; SENSOR FUSION BLOCK DIAGRAM</text>
+<text x="460" y="36" text-anchor="middle" font-size="9" fill="#aabbcc" letter-spacing="0.5">Pitch Angle Estimation &#xB7; MPU6050 @ 400 kHz I2C &#xB7; &#x3B1; = 0.96</text>
+<rect x="0" y="48" width="11" height="118" fill="#155e42" opacity="0.88"/>
+<text x="5.5" y="107" text-anchor="middle" font-size="7.5" font-weight="bold" fill="white" transform="rotate(-90 5.5 107)" letter-spacing="0.8">GYROSCOPE PATH</text>
+<rect x="0" y="186" width="11" height="104" fill="#b06a00" opacity="0.88"/>
+<text x="5.5" y="238" text-anchor="middle" font-size="7.5" font-weight="bold" fill="white" transform="rotate(-90 5.5 238)" letter-spacing="0.8">ACCELEROMETER PATH</text>
+<rect x="20" y="81" width="100" height="52" fill="white" stroke="#555" stroke-width="1.5" rx="3" filter="url(#sh)"/>
+<text x="70" y="99" text-anchor="middle" font-size="8.5" fill="#777">Gyroscope</text>
+<text x="70" y="115" text-anchor="middle" font-size="11" font-style="italic" font-weight="bold" fill="#1c1c1e">raw_gx</text>
+<text x="70" y="128" text-anchor="middle" font-size="7.5" fill="#aaa">INT16  LSB</text>
+<path d="M120,107 L150,107" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="150" y="81" width="106" height="52" fill="white" stroke="#555" stroke-width="1.5" rx="3" filter="url(#sh)"/>
+<text x="203" y="99" text-anchor="middle" font-size="8.5" fill="#777">Bias Remove</text>
+<text x="203" y="115" text-anchor="middle" font-size="11" font-style="italic" fill="#1c1c1e">gx &#x2212; offset</text>
+<text x="203" y="128" text-anchor="middle" font-size="7.5" fill="#aaa">2000-sample cal.</text>
+<path d="M256,107 L286,107" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="286" y="81" width="100" height="52" fill="white" stroke="#555" stroke-width="1.5" rx="3" filter="url(#sh)"/>
+<text x="336" y="99" text-anchor="middle" font-size="8.5" fill="#777">Scale</text>
+<text x="336" y="115" text-anchor="middle" font-size="11" font-style="italic" fill="#1c1c1e">&#xF7; 131.0</text>
+<text x="336" y="128" text-anchor="middle" font-size="7.5" fill="#aaa">&#x3C9;  [deg/s]</text>
+<path d="M386,107 L416,107" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="416" y="81" width="106" height="52" fill="white" stroke="#155e42" stroke-width="2.0" rx="3" filter="url(#sh)"/>
+<text x="469" y="99" text-anchor="middle" font-size="8.5" fill="#888">Integrator</text>
+<line x1="424" y1="105" x2="514" y2="105" stroke="#eee" stroke-width="0.8"/>
+<text x="469" y="115" text-anchor="middle" font-size="12" font-style="italic" fill="#1c1c1e">&#x3B8; + &#x3C9;&#xB7;dt</text>
+<text x="469" y="129" text-anchor="middle" font-size="7.5" fill="#aaa">dt = 0.01 s</text>
+<path d="M522,107 L552,107" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="552" y="81" width="84" height="52" fill="#f2f9f6" stroke="#155e42" stroke-width="2.0" rx="3" filter="url(#sh)"/>
+<text x="594" y="99" text-anchor="middle" font-size="8.5" fill="#888">Gain</text>
+<text x="594" y="116" text-anchor="middle" font-size="15" font-weight="bold" fill="#155e42">&#x3B1;</text>
+<text x="594" y="130" text-anchor="middle" font-size="9" fill="#155e42">= 0.96</text>
+<path d="M636,107 L686,107 L686,218" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<text x="350" y="153" text-anchor="middle" font-size="8" font-style="italic" fill="#bbb">High-pass: precise short-term, drifts long-term</text>
+<rect x="20" y="212" width="100" height="52" fill="white" stroke="#555" stroke-width="1.5" rx="3" filter="url(#sh)"/>
+<text x="70" y="230" text-anchor="middle" font-size="8.5" fill="#777">Accelerometer</text>
+<text x="70" y="244" text-anchor="middle" font-size="10" font-style="italic" font-weight="bold" fill="#1c1c1e">raw_ay,  raw_az</text>
+<text x="70" y="258" text-anchor="middle" font-size="7.5" fill="#aaa">INT16  LSB</text>
+<path d="M120,238 L284,238" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="284" y="212" width="126" height="52" fill="white" stroke="#b06a00" stroke-width="2.0" rx="3" filter="url(#sh)"/>
+<text x="347" y="230" text-anchor="middle" font-size="8.5" fill="#888">Arctangent</text>
+<line x1="292" y1="236" x2="402" y2="236" stroke="#eee" stroke-width="0.8"/>
+<text x="347" y="246" text-anchor="middle" font-size="11" font-style="italic" fill="#1c1c1e">atan2(ay, az)</text>
+<text x="347" y="260" text-anchor="middle" font-size="8" fill="#aaa">&#xD7; 57.296 &#x2192; &#x3B8;_acc [&#xB0;]</text>
+<path d="M410,238 L552,238" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="552" y="212" width="84" height="52" fill="#fff9f2" stroke="#b06a00" stroke-width="2.0" rx="3" filter="url(#sh)"/>
+<text x="594" y="230" text-anchor="middle" font-size="8.5" fill="#888">Gain</text>
+<text x="594" y="247" text-anchor="middle" font-size="13" font-weight="bold" fill="#b06a00">1&#x2212;&#x3B1;</text>
+<text x="594" y="261" text-anchor="middle" font-size="9" fill="#b06a00">= 0.04</text>
+<path d="M636,238 L686,238 L686,232" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<text x="350" y="284" text-anchor="middle" font-size="8" font-style="italic" fill="#bbb">Low-pass: noisy short-term, accurate long-term (no drift)</text>
+<circle cx="698" cy="168" r="15" fill="white" stroke="#1c1c1e" stroke-width="1.8" filter="url(#sh)"/>
+<text x="698" y="163" text-anchor="middle" font-size="13" fill="#1c1c1e">+</text>
+<text x="698" y="177" text-anchor="middle" font-size="13" fill="#1c1c1e">+</text>
+<path d="M713,168 L756,168" fill="none" stroke="#1c1c1e" stroke-width="1.65" marker-end="url(#fw)"/>
+<rect x="756" y="142" width="100" height="52" fill="#f2f9f6" stroke="#155e42" stroke-width="2.4" rx="3" filter="url(#sh)"/>
+<text x="806" y="162" text-anchor="middle" font-size="8.5" fill="#888">Estimated Pitch</text>
+<text x="806" y="178" text-anchor="middle" font-size="14" font-style="italic" font-weight="bold" fill="#155e42">&#x3B8;(t)</text>
+<path d="M806,194 L806,310 L469,310 L469,133" fill="none" stroke="#b22020" stroke-width="1.65" stroke-dasharray="5,3.5" marker-end="url(#fb)"/>
+<text x="640" y="323" text-anchor="middle" font-size="8" font-style="italic" fill="#b22020">&#x3B8;_prev  (fed back into integrator)</text>
+<rect x="18" y="344" width="884" height="84" fill="white" stroke="#ddd" stroke-width="1" rx="3"/>
+<text x="460" y="364" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">Filter Equation</text>
+<text x="460" y="385" text-anchor="middle" font-size="13" font-style="italic" fill="#1c1c1e">&#x3B8;[n]  =  0.96 &#xD7; ( &#x3B8;[n&#x2212;1] + &#x3C9;[n] &#xD7; dt )  +  0.04 &#xD7; atan2(ay, az)</text>
+<line x1="28" y1="392" x2="892" y2="392" stroke="#eee" stroke-width="0.8"/>
+<text x="460" y="406" text-anchor="middle" font-size="9" fill="#888">Cutoff frequency:  fc = (1&#x2212;&#x3B1;) / (2&#x3C0;&#xB7;dt) = 0.04 / (2&#x3C0; &#xD7; 0.01) &#x2248; 0.637 Hz</text>
+<text x="460" y="421" text-anchor="middle" font-size="9" fill="#888">Signals &gt; 0.637 Hz: gyroscope trusted  &#xB7;  Signals &lt; 0.637 Hz: accelerometer corrects drift</text>
+</svg>

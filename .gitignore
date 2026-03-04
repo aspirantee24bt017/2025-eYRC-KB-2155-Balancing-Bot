@@ -1,0 +1,96 @@
+# ─── Arduino ──────────────────────────────────────────────────────────────────
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.o
+build/
+output/
+
+# Arduino IDE auto-generated
+*.bak
+*.orig
+.build/
+
+# ─── Python (Webots simulation) ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+*.egg
+.env
+.venv
+env/
+venv/
+
+# ─── Webots ───────────────────────────────────────────────────────────────────
+*.wbproj
+.cache/
+webots_project/.cache/
+
+# ─── OS files ─────────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ─── Serial / Logs ────────────────────────────────────────────────────────────
+*.log
+serial_log*.txt
+debug_output*.txt
+
+# ─── Large media (tracked via Git LFS or stored externally) ───────────────────
+# Uncomment if you do NOT want videos in the repo
+# *.mp4
+# *.avi
+# *.mov
+
+# ─── Secrets / Credentials ────────────────────────────────────────────────────
+secrets.h
+credentials.h
+*.key
+*.pem
+
+# ─── Temporary / Misc ─────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+node_modules/
