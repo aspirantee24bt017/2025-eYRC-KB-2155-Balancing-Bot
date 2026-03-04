@@ -30,8 +30,6 @@ krishi-balancer/
 │   └── PID.ino                      ← Main firmware (1100+ lines)
 │
 ├── docs/
-│   ├── control_architecture.svg     ← Cascaded PID block diagram
-│   ├── complementary_filter.svg     ← Sensor fusion block diagram
 │   └── circuit_notes.md             ← Pin maps, wiring, calibration
 │
 ├── images/
@@ -74,7 +72,7 @@ krishi-balancer/
 | Motor driver | L298N dual H-bridge | `botController v1.1` |
 | Power | 7.4 V 2S LiPo, ~1200 mAh | Powers motors + Nano via onboard 5V reg |
 | Bluetooth | HC-05 module | 9600 baud, UART pins D12/D13 |
-| Buzzer | Active buzzer | D7 (startup calibration beeps) |
+| Buzzer | Active buzzer | A1 (startup calibration beeps) |
 | Servo | TowerPro MG90S × 2 | A0 pin via Servo library |
 | Switch | SPST power switch | Inline on LiPo positive lead |
 
