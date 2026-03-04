@@ -11,7 +11,7 @@
 |------|--------|
 | **Prathamesh Nerpagar** ⭐ *(Team Lead)* | EEE, IIT Dharwad |
 | **Aadhi Shankar** | Mech, IIT Dharwad |
-| **Balamurali** | Mech, IIT Dharwad |
+| **Balamurali V B** | Mech, IIT Dharwad |
 | **Sameer Chakravarti** | CSE, IIT Dharwad |
 
 **Institution:** IIT Dharwad  
@@ -490,6 +490,6 @@ After competition closure, may be open-sourced under MIT License.
 
 **eYRC 2025-26  ·  Team KB#2155  ·  Krishi Balancer  ·  IIT Bombay**
 
-*Prathamesh Nerpagar · Aadhi Shankar · Balamurali · Sameer Chakravarti*
+*Prathamesh Nerpagar · Aadhi Shankar · Balamurali V B · Sameer Chakravarti*
 
 </div>
