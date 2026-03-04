@@ -7,14 +7,14 @@
 
 ## 👥 Team
 
-| Name | Role |
-|------|------|
-| **Prathamesh Nerpagar** | Team Lead — Control systems, firmware architecture |
-| **Adhi Shankar** | Hardware design, sensor integration |
-| **Balamurali** | Mechanical assembly, chassis fabrication |
-| **Sameer Chakravarti** | Testing, tuning, Bluetooth interface |
+| Name | Branch |
+|------|--------|
+| **Prathamesh Nerpagar** ⭐ *(Team Lead)* | EEE, IIT Dharwad |
+| **Aadhi Shankar** | Mech, IIT Dharwad |
+| **Balamurali** | Mech, IIT Dharwad |
+| **Sameer Chakravarti** | CSE, IIT Dharwad |
 
-**Institution:** Walchand College of Engineering / [Your college]  
+**Institution:** IIT Dharwad  
 **Team ID:** KB#2155 | **Stage:** 3 (Hardware)
 
 ---
@@ -104,10 +104,6 @@ krishi-balancer/
 
 The robot uses a **three-loop cascaded PID architecture** running entirely on the Arduino Nano.
 
-### Block Diagram
-
-![Control Architecture](docs/control_architecture.svg)
-
 ### Loop Overview
 
 | Loop | Controller | Rate | Input | Output |
@@ -168,10 +164,6 @@ Default I2C is 100 kHz → MPU6050 read takes ~1.4 ms. At 400 kHz it takes ~0.35
 ---
 
 ## 📐 Sensor Fusion — Complementary Filter
-
-### Block Diagram
-
-![Complementary Filter](docs/complementary_filter.svg)
 
 ### Algorithm
 
@@ -500,6 +492,6 @@ After competition closure, may be open-sourced under MIT License.
 
 **eYRC 2025-26  ·  Team KB#2155  ·  Krishi Balancer  ·  IIT Bombay**
 
-*Prathamesh Nerpagar · Adhi Shankar · Balamurali · Sameer Chakravarti*
+*Prathamesh Nerpagar · Aadhi Shankar · Balamurali · Sameer Chakravarti*
 
 </div>
