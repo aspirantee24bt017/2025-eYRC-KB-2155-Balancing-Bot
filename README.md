@@ -15,7 +15,7 @@
 | **Sameer Chakravarti** | CSE, IIT Dharwad |
 
 **Institution:** IIT Dharwad  
-**Team ID:** KB#2155 | **Stage 2 qualified**
+**Team ID:** KB#2155 | **Stage 2 qualifier**
 
 ---
 
