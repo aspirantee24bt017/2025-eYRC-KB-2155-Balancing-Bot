@@ -40,8 +40,8 @@ krishi-balancer/
 │   └── Top_view.jpg
 │
 ├── simulation/
-│   ├── Task2A.mp4                   ← CoppeliaSims simulation Task 2A
-│   └── Task2B.mp4                   ← CoppeliaSims simulation Task 2B
+│   ├── Task2A.mp4                   ← CoppeliaSim  simulation Task 2A
+│   └── Task2B.mp4                   ← CoppeliaSim  simulation Task 2B
 │
 └── videos/
     └── Task3C.mp4                   ← Hardware live demo Task 3C
@@ -459,10 +459,10 @@ P:-1.0 T:-1.1 M: 8 G: 2    ← recovering
 
 ## 🗂️ Task Summary
 
-### Task 2A — Simulation: Basic Balancing (CoppeliaSims)
-Implemented complementary filter and inner angle PID loop in Python/CoppeliaSims. Robot balances in place with no external disturbances.
+### Task 2A — Simulation: Basic Balancing (CoppeliaSim )
+Implemented complementary filter and inner angle PID loop in Python/CoppeliaSim . Robot balances in place with no external disturbances.
 
-### Task 2B — Simulation: Motion Control (CoppeliaSims)
+### Task 2B — Simulation: Motion Control (CoppeliaSim )
 Added outer velocity loop and yaw control. Robot responds to keyboard commands — forward, backward, and turn in simulation.
 
 ### Task 3C — Hardware: Full Balancing Demo
