@@ -40,8 +40,8 @@ krishi-balancer/
 │   └── Top_view.jpg
 │
 ├── simulation/
-│   ├── Task2A.mp4                   ← Webots simulation Task 2A
-│   └── Task2B.mp4                   ← Webots simulation Task 2B
+│   ├── Task2A.mp4                   ← CoppeliaSims simulation Task 2A
+│   └── Task2B.mp4                   ← CoppeliaSims simulation Task 2B
 │
 └── videos/
     └── Task3C.mp4                   ← Hardware live demo Task 3C
@@ -92,8 +92,8 @@ krishi-balancer/
 
 | Task | Description | Link |
 |------|-------------|------|
-| Task 2A | Webots simulation — balancing in place | [simulation/Task2A.mp4](simulation/Task2A.mp4) |
-| Task 2B | Webots simulation — forward/backward motion + yaw | [simulation/Task2B.mp4](simulation/Task2B.mp4) |
+| Task 2A | CoppeliaSim simulation — balancing in place | [simulation/Task2A.mp4](simulation/Task2A.mp4) |
+| Task 2B | CoppeliaSim simulation — forward/backward motion + yaw | [simulation/Task2B.mp4](simulation/Task2B.mp4) |
 | Task 3C | Hardware live demo — full balancing + Bluetooth control | [videos/Task3C.mp4](videos/Task3C.mp4) |
 
 ---
@@ -459,10 +459,10 @@ P:-1.0 T:-1.1 M: 8 G: 2    ← recovering
 
 ## 🗂️ Task Summary
 
-### Task 2A — Simulation: Basic Balancing (Webots)
-Implemented complementary filter and inner angle PID loop in Python/Webots. Robot balances in place with no external disturbances.
+### Task 2A — Simulation: Basic Balancing (CoppeliaSims)
+Implemented complementary filter and inner angle PID loop in Python/CoppeliaSims. Robot balances in place with no external disturbances.
 
-### Task 2B — Simulation: Motion Control (Webots)
+### Task 2B — Simulation: Motion Control (CoppeliaSims)
 Added outer velocity loop and yaw control. Robot responds to keyboard commands — forward, backward, and turn in simulation.
 
 ### Task 3C — Hardware: Full Balancing Demo
